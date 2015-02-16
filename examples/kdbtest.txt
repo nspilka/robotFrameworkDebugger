@@ -1,0 +1,24 @@
+*** Settings ***
+Library           Dialogs
+
+*** Test Cases ***
+test0
+    ${a}    Set Variable    "MY VAR"
+    ${b}    Set Variable    417
+
+test1
+    ${a}    Set Variable    4
+    ${b}=    Evaluate    12+23
+    @{words}    Create List    the    old    dog    jumps
+    examine_Var    11
+    ${ints}    Create List    ${1}    ${2}    ${3}
+    ${c}    Should Be Equal As Integers    ${a}    ${b}
+
+*** Keywords ***
+examine_Var
+    [Arguments]    ${var}
+    ${ff}    Evaluate    13+22
+    ${gg}    Evaluate    9+12
+    ${a}    Set Variable    ${777}
+    ${hh}    Set Variable    ${44}
+

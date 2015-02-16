@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.7 (Jython 2.5.3 on java1.7.0_60-ea)" generated="20150215 23:14:10.146">
+<suite source="/Users/nspilka/github/RFDB/kestrel/kdbtest.txt" id="s1" name="Kdbtest">
+<test id="s1-t1" name="test0">
+<kw type="kw" name="${a} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>"MY VAR"</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.315" level="INFO">${a} = "MY VAR"</msg>
+<status status="PASS" endtime="20150215 23:14:11.313" starttime="20150215 23:14:11.309"></status>
+</kw>
+<kw type="kw" name="${b} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>417</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.321" level="INFO">${b} = 417</msg>
+<status status="PASS" endtime="20150215 23:14:11.321" starttime="20150215 23:14:11.317"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" critical="yes" endtime="20150215 23:14:11.324" starttime="20150215 23:14:11.299"></status>
+</test>
+<test id="s1-t2" name="test1">
+<kw type="kw" name="${a} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.335" level="INFO">${a} = 4</msg>
+<status status="PASS" endtime="20150215 23:14:11.335" starttime="20150215 23:14:11.332"></status>
+</kw>
+<kw type="kw" name="${b} = BuiltIn.Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>12+23</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.343" level="INFO">${b} = 35</msg>
+<status status="PASS" endtime="20150215 23:14:11.342" starttime="20150215 23:14:11.337"></status>
+</kw>
+<kw type="kw" name="@{words} = BuiltIn.Create List">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>the</arg>
+<arg>old</arg>
+<arg>dog</arg>
+<arg>jumps</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.349" level="INFO">@{words} = [ the | old | dog | jumps ]</msg>
+<status status="PASS" endtime="20150215 23:14:11.348" starttime="20150215 23:14:11.345"></status>
+</kw>
+<kw type="kw" name="examine_Var">
+<doc></doc>
+<arguments>
+<arg>11</arg>
+</arguments>
+<kw type="kw" name="${ff} = BuiltIn.Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>13+22</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.360" level="INFO">${ff} = 35</msg>
+<status status="PASS" endtime="20150215 23:14:11.359" starttime="20150215 23:14:11.356"></status>
+</kw>
+<kw type="kw" name="${gg} = BuiltIn.Evaluate">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>9+12</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.367" level="INFO">${gg} = 21</msg>
+<status status="PASS" endtime="20150215 23:14:11.366" starttime="20150215 23:14:11.362"></status>
+</kw>
+<kw type="kw" name="${a} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${777}</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.372" level="INFO">${a} = 777</msg>
+<status status="PASS" endtime="20150215 23:14:11.372" starttime="20150215 23:14:11.369"></status>
+</kw>
+<kw type="kw" name="${hh} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${44}</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.377" level="INFO">${hh} = 44</msg>
+<status status="PASS" endtime="20150215 23:14:11.377" starttime="20150215 23:14:11.374"></status>
+</kw>
+<status status="PASS" endtime="20150215 23:14:11.379" starttime="20150215 23:14:11.351"></status>
+</kw>
+<kw type="kw" name="${ints} = BuiltIn.Create List">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${1}</arg>
+<arg>${2}</arg>
+<arg>${3}</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.385" level="INFO">${ints} = [1, 2, 3]</msg>
+<status status="PASS" endtime="20150215 23:14:11.385" starttime="20150215 23:14:11.380"></status>
+</kw>
+<kw type="kw" name="${c} = BuiltIn.Should Be Equal As Integers">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${a}</arg>
+<arg>${b}</arg>
+</arguments>
+<msg timestamp="20150215 23:14:11.391" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'int'&gt;</msg>
+<msg timestamp="20150215 23:14:11.418" level="FAIL">4 != 35</msg>
+<status status="FAIL" endtime="20150215 23:14:11.419" starttime="20150215 23:14:11.387"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" critical="yes" endtime="20150215 23:14:11.421" starttime="20150215 23:14:11.327">4 != 35</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150215 23:14:11.425" starttime="20150215 23:14:10.153"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" id="s1" fail="1" name="Kdbtest">Kdbtest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

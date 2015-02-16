@@ -1,0 +1,1 @@
+jybot -J-XstartOnFirstThread --pythonpath target/rfdb-1.0.0-SNAPSHOT.jar --listener com.bandofyetis.robotframeworkdebugger.RobotFrameworkDebugger kestrel/kdbtest.txt
