@@ -1,12 +1,3 @@
-/*
- * @author Nik Spilka
- * @version 1.0
- *
- * Copyright (c) 2014
- * Do not reproduce without permission in writing.
- * All rights reserved.
- */
-
 package com.bandofyetis.robotframeworkdebugger;
 
 import java.util.HashMap;

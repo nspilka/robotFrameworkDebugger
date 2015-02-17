@@ -1,12 +1,3 @@
-/*
- * @version 1.0
- *
- * @author Nik Spilka
- *
- * Copyright (c) 2014
- * Do not reproduce without permission in writing.
- * All rights reserved.
- **/
 package com.bandofyetis.robotframeworkdebugger;
 
 import static org.junit.Assert.*;
